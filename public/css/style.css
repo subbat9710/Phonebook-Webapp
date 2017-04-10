@@ -27,14 +27,17 @@ input {
 	background-color: blue;
 }
 table {
-	border: solid;
+    margin: 0;
+	border: solid 1px;
 	border-size: 1px;
 	margin-left: 0px;
 }
 th {
+	margin: 0;
 	border: solid;
 	padding: 10px;
 }
 td {
+	margin: 0;
 	border: solid;
 }
