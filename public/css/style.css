@@ -1,0 +1,40 @@
+header {
+	background-color: orange;
+	margin: 0px;
+}
+h1 {
+	margin: 0px;
+}
+body {
+	font-size: 1.3em;
+	background: linear-gradient(powderblue, black);
+	text-align: center;
+	margin: 0px;
+}
+.wrapper {
+	background: linear-gradient(lightgreen, white);
+	margin: 0 auto;
+	height: 700px;
+	width: 1100px;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+}
+input {
+	box-sizing: 1.6em;
+}
+.sub {
+	font-size: 1.6em;
+	background-color: blue;
+}
+table {
+	border: solid;
+	border-size: 1px;
+	margin-left: 0px;
+}
+th {
+	border: solid;
+	padding: 10px;
+}
+td {
+	border: solid;
+}

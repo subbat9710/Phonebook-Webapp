@@ -1,13 +1,51 @@
-<h2>Enter your Informations</h2>
-<form action ="/phonebook" method ="post">
-    First Name: <input type ="text" name ="first_name">
-    Last Name: <input type ="text" name ="last_name"><br>
-    Street Address: <input type ="text" name ="street_address"><br> 
-    City: <input type ="text" name ="city"><br>
-    Zip Code: <input type ="text" name ="zipcode"><br>
-    Cell Phone: <input type ="text" name ="cell_phone"><br>
-    Home Phone: <input type ="text" name ="home_phone"><br> 
-    Work Phone: <input type ="text" name ="work_phone"><br> 
-    <hr>
-    <input type ="submit" value ="submit">
-</form>
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>phonebookapp</title>
+	    <link href ="css/style.css" rel ="stylesheet"> <!-- links the css folder -->
+    </head>
+<body> 
+    <div class ="wrapper"> 
+    <header><h2>Enter your Informations</h2></header><br>
+    <form action ="/phonebook" method ="post">
+        First Name: <input type ="text" name ="first_name">
+        Last Name: <input type ="text" name ="last_name"><p>
+        Street Address: <input type ="text" name ="street_address"><p> 
+        City: <input type ="text" name ="city"><p>
+        Zip Code: <input type ="text" name ="zipcode"><p>
+        Cell Phone: <input type ="text" name ="cell_phone"><p>
+        Home Phone: <input type ="text" name ="home_phone"><p> 
+        Work Phone: <input type ="text" name ="work_phone"><p> 
+        <hr>
+        <input class ="sub" type ="submit" value ="Submit">
+    </form>
+        <hr>
+    <table>   <!-- creating a table -->
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Street Address</th>
+                <th>City</th>
+                <th>Zip Code</th>
+                <th>Cell Phone</th>
+                <th>Home Phone</th>
+                <th>Work Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%phonebook.each do |contacts| %> <!-- brings back the deta in the front page -->
+            <tr>
+                <td><%=contacts["first_name"]%></td>  <!-- brings back the first_name in the table -->
+                <td><%=contacts["last_name"]%></td>
+                <td><%=contacts["street_address"]%></td>
+                <td><%=contacts["city"]%></td>
+                <td><%=contacts["state"]%></td>
+                <td><%=contacts["cell_phone"]%></td>
+                <td><%=contacts["home_phone"]%></td>
+                <td><%=contacts["work_phone"]%></td>
+            </tr>
+    <%end%>
+    </div>
+</body>
+</html>
