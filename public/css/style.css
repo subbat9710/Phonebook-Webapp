@@ -15,12 +15,13 @@ body {
 	-moz-background-size: cover;
 	background-size: cover;
 	text-align: center;
-	margin: 0px;
+	margin: 5px;
 }
 .wrapper {
 	background: linear-gradient(lightgreen, white);
 	border-radius: 70px 70px 70px 70px;
 	margin: 0 auto;
+	margin-top: 20px;
 	height: 660px;
 	width: 1100px;
 	background-repeat: no-repeat;
@@ -28,8 +29,29 @@ body {
 }
 input {
 	resize: horizontal;
-	width: 200px;
-	height: 15px;
+	width: 150px;
+	height: 19px;
+	padding: 0 10px;
+	line-height: 18px;
+	outline: none;
+}
+#flex0 {
+	margin-left: 0px;
+}
+#flex {
+	margin-left: 80px;
+}
+#flex1 {
+	margin-left: 40px;
+}
+#flex2 {
+	margin-left: 30px;
+}
+#flex3 {
+	margin-left: 15px;
+}
+#flex4 {
+	margin-left: 20px;
 }
 .sub {
 	font-size: 1.4em;
