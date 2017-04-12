@@ -16,6 +16,11 @@ get '/' do
     erb :index, :locals => {:phonebook => phonebook}	
 end
 
+get '/index1' do 
+    phonebook = db.exec("SELECT first_name, last_name, street_address, city, state, zipcode, cell_phone, home_phone, work_phone FROM phonebook");
+    erb :index1, :locals => {:phonebook => phonebook}	
+end
+
 post '/phonebook' do 
 	first_name = params[:first_name]
 	last_name = params[:last_name]
@@ -26,6 +31,7 @@ post '/phonebook' do
 	cell_phone = params[:cell_phone]
 	home_phone = params[:home_phone]
     work_phone = params[:work_phone]
-    db.exec("INSERT INTO phonebook(first_name, last_name, street_address, city, state, zipcode, cell_phone, home_phone, work_phone) VALUES('#{first_name}', '#{last_name}', '#{street_address}', '#{city}', '#{state}', '#{zipcode}', '#{cell_phone}', '#{home_phone}', '#{work_phone}')"); #put the stuffs in the database
+    your_picture = params[:your_picture]
+    db.exec("INSERT INTO phonebook(first_name, last_name, street_address, city, state, zipcode, cell_phone, home_phone, work_phone, your_picture) VALUES('#{first_name}', '#{last_name}', '#{street_address}', '#{city}', '#{state}', '#{zipcode}', '#{cell_phone}', '#{home_phone}', '#{work_phone}', '#{your_picture}')"); #put the stuffs in the database
     redirect '/'
 end

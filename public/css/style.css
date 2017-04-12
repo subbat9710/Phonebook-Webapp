@@ -22,7 +22,7 @@ body {
 	border-radius: 70px 70px 70px 70px;
 	margin: 0 auto;
 	margin-top: 20px;
-	height: 660px;
+	height: 560px;
 	width: 1100px;
 	background-repeat: no-repeat;
 	opacity: 0.9;
@@ -53,6 +53,9 @@ input {
 #flex4 {
 	margin-left: 20px;
 }
+#flex5 {
+	margin-left: 0px;
+}
 .sub {
 	font-size: 1.4em;
 	height: 40px;
@@ -62,9 +65,9 @@ input {
 }
 table {
     margin: 0;
-	border: solid 1px;
+	border: solid 0px;
 	border-size: 1px;
-	margin-left: 40px;
+	margin-left: 6px;
 }
 th {
 	margin: 0;
@@ -74,6 +77,9 @@ th {
 td {
 	margin: 0;
 	border: solid;
+}
+a {
+	font-size: 1.3em;
 }
 .footer {
 	color: white;

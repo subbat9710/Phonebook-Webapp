@@ -6,8 +6,8 @@
     </head>
     <h2>Enter your Informations</h2><p>
 <body> 
-    <div class ="wrapper"> 
-    <form action ="/phonebook" method ="post"><p>
+    <div class ="wrapper"><br>
+    <form action ="/phonebook.php" accept ="image/gif, image/jpeg" method ="post"><p>
         First Name: <input type ="text" autofocus="autofocus" placeholder ="First Name">
         Last Name: <input type ="text" placeholder ="Last Name"><p>
         <div id ="flex0">Street Address: <input type ="text" placeholder ="Street Address"><p></div>
@@ -16,38 +16,12 @@
         <div id ="flex2">Cell Phone: <input type ="text" placeholder ="Cell Phone"><p></div>
         <div id ="flex3">Home Phone: <input type ="text" placeholder ="Home Phone"><p></div> 
         <div id ="flex4">Work Phone: <input type ="text" placeholder ="Work Phone"><p></div> 
-        <hr>
+        <div id ="flex5">Your Picture: <input type ="file" name ="pic"><p></div>
+        <hr><p>
         <input class ="sub" type ="submit" value ="Submit">
     </form>
-        <hr>
-    <table>   <!-- creating a table -->
-        <thead>
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Street Address</th>
-                <th>City</th>
-                <th>Zip Code</th>
-                <th>Cell Phone</th>
-                <th>Home Phone</th>
-                <th>Work Phone</th>
-            </tr>
-        </thead>
-        <tbody>
-            <%phonebook.each do |contacts| %> <!-- brings back the deta in the front page -->
-            <tr>
-                <td><%=contacts["first_name"]%></td>  <!-- brings back the first_name in the table -->
-                <td><%=contacts["last_name"]%></td>
-                <td><%=contacts["street_address"]%></td>
-                <td><%=contacts["city"]%></td>
-                <td><%=contacts["state"]%></td>
-                <td><%=contacts["cell_phone"]%></td>
-                <td><%=contacts["home_phone"]%></td>
-                <td><%=contacts["work_phone"]%></td>
-            </tr>
-        </tbody>
-    <%end%>
-    </table>
+    <hr>
+    <a href ="index1">After hitting Submit.Click here for your detail information</a>
     </div>
     <div class ="footer">
     <p>www.information.org</p>
