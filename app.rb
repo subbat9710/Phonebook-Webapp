@@ -13,7 +13,12 @@ db = PG::Connection.new(db_params)
 
 get '/' do 
     phonebook = db.exec("SELECT first_name, last_name, street_address, city, state, zipcode, cell_phone, home_phone, work_phone FROM phonebook");
-    erb :index, :locals => {:phonebook => phonebook}	
+    erb :get_index, :locals => {:phonebook => phonebook}	
+end
+
+get '/index' do 
+	phonebook = db.exec("SELECT first_name, last_name, street_address, city, state, zipcode, cell_phone, home_phone, work_phone FROM phonebook");
+    erb :get_index, :locals => {:phonebook => phonebook}
 end
 
 get '/index1' do 
@@ -31,7 +36,15 @@ post '/phonebook' do
 	cell_phone = params[:cell_phone]
 	home_phone = params[:home_phone]
     work_phone = params[:work_phone]
-    your_picture = params[:your_picture]
-    db.exec("INSERT INTO phonebook(first_name, last_name, street_address, city, state, zipcode, cell_phone, home_phone, work_phone, your_picture) VALUES('#{first_name}', '#{last_name}', '#{street_address}', '#{city}', '#{state}', '#{zipcode}', '#{cell_phone}', '#{home_phone}', '#{work_phone}', '#{your_picture}')"); #put the stuffs in the database
+    db.exec("INSERT INTO phonebook(first_name, last_name, street_address, city, state, zipcode, cell_phone, home_phone, work_phone) VALUES('#{first_name}', '#{last_name}', '#{street_address}', '#{city}', '#{state}', '#{zipcode}', '#{cell_phone}', '#{home_phone}', '#{work_phone}')"); #put the stuffs in the database
     redirect '/'
+end
+get '/search' do 
+	phonebook = ""
+	erb :search, :locals => {:phonebook => phonebook}
+end
+post '/results' do 
+	search_array = params[:search]
+	results = search(search_array)
+	erb :results, :locals => {:phonebook => phonebook}
 end

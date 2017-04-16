@@ -22,7 +22,7 @@
             </tr>
         </thead>
         <tbody>
-            <%phonebook.each do |contacts| %> <!-- brings back the deta in the front page -->
+            <%result.each do |contacts| %> <!-- brings back the deta in the front page -->
             <tr>
                 <td><%=contacts["first_name"]%></td>  <!-- brings back the first_name in the table -->
                 <td><%=contacts["last_name"]%></td>
@@ -38,9 +38,7 @@
     <%end%>
     </table>
     </div>
-    <div>
-    <button onclick ="myFunction()">Remove Selected line</button>
-    </div>
+   <%= yield %>
     <div class ="footer">
     <p>www.information.org</p>
     </div>
