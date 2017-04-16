@@ -12,8 +12,7 @@ db_params = {
 db = PG::Connection.new(db_params)
 
 get '/' do 
-    phonebook = db.exec("SELECT first_name, last_name, street_address, city, state, zipcode, cell_phone, home_phone, work_phone FROM phonebook");
-    erb :get_index, :locals => {:phonebook => phonebook}	
+   erb :phonebookapp	
 end
 
 get '/index' do 
