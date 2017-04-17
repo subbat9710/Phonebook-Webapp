@@ -97,19 +97,41 @@ a {
     margin: 100px auto 50px;
     overflow: hidden;
 }
+#find,
 #search,
 #submit {
 	float: left;
 }
+
 #search {
 	padding: 5px 9px;
 	height: 23px;
-	width: 380px;
+	width: 250px;
 	border: 1px solid #a4c3ca;
 	font: normal 13px 'trebuchet MS', arial, helvetica;
 	background: #f1f1f1,
 	border-radius: 50px 3px 3px 50px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);	
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+	margin-left: 10px;	
+}
+#find {
+	background-color: #6cbb6b;
+    background-image: linear-gradient(#95d788, #6cbb6b);
+    border-radius: 50px 3px 3px 50px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    height: 35px;
+    margin: 15 0 0 10px;
+    padding: 0;
+    width: 120px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #23441e;    
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    margin-left: 10px;
 }
 #submit {
 	background-color: #6cbb6b;
@@ -121,7 +143,7 @@ a {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
                 0 1px 0 rgba(255, 255, 255, 0.3) inset;
     height: 35px;
-    margin: 0 0 0 10px;
+    margin: 10 0 0 10px;
     padding: 0;
     width: 90px;
     cursor: pointer;

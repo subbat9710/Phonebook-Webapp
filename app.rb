@@ -15,6 +15,7 @@ get '/' do
    erb :phonebookapp	
 end
 
+
 get '/index' do 
 	phonebook = db.exec("SELECT first_name, last_name, street_address, city, state, zipcode, cell_phone, home_phone, work_phone FROM phonebook");
     erb :get_index, :locals => {:phonebook => phonebook}
@@ -38,12 +39,14 @@ post '/phonebook' do
     db.exec("INSERT INTO phonebook(first_name, last_name, street_address, city, state, zipcode, cell_phone, home_phone, work_phone) VALUES('#{first_name}', '#{last_name}', '#{street_address}', '#{city}', '#{state}', '#{zipcode}', '#{cell_phone}', '#{home_phone}', '#{work_phone}')"); #put the stuffs in the database
     redirect '/'
 end
+
 get '/search' do 
-	phonebook = ""
-	erb :search, :locals => {:phonebook => phonebook}
+	erb :search
 end
+
 post '/results' do 
-	search_array = params[:search]
-	results = search(search_array)
-	erb :results, :locals => {:phonebook => phonebook}
+	find = params[:find]
+	findcontacts = params[:findcontacts]
+	list = db.exec("SELECT * FROM phonebook WHERE" + find + "ILIKE" + findcontacts + "")
+	erb :results, :locals => {:list => list}
 end

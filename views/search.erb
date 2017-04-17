@@ -9,7 +9,18 @@
     <div>
         <h>Search your name</h>
         <form id ="searchbox" method ="post" action ="results">
-            <input id ="search" type ="text" name ="search" placeholder="Type here">
-            <input id ="submit" type ="submit" value ="Search">
+            <select id ="find" name ="find">
+            <option value ="first_name">First Name</option>
+            <option value ="last_name">Last Name</option>
+            <option value ="street_address">Street Address</option>
+            <option value ="city">City</option>
+            <option value ="state">State</option>
+            <option value ="cell_phone">Cell Phone</option>
+            <option value ="home_phone">Home Phone</option>
+            <option value ="work_phone">Work Phone</option>
+            </select>
+
+            <input id ="search" type ="text" name ="findcontacts" placeholder="Type here">
+            <input id ="submit" type ="submit" name ="submit" value ="Search">
         </form>
     </div>
