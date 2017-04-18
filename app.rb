@@ -47,6 +47,6 @@ end
 post '/results' do 
 	find = params[:find]
 	findcontacts = params[:findcontacts]
-	list = db.exec("SELECT * FROM phonebook WHERE" + find + "ILIKE" + findcontacts + "")
+	list = db.exec("SELECT * FROM phonebook WHERE first_name LIKE 'Te_la'");
 	erb :results, :locals => {:list => list}
 end
