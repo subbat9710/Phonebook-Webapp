@@ -27,6 +27,36 @@ body {
 	background-repeat: no-repeat;
 	opacity: 0.9;
 }
+.first {
+	padding: 0px;
+	margin-left: 0px;
+	border: solid;
+	background-color: lightblue; 
+	border-color: lightblue;
+}
+.second { 
+	border: solid; 
+	background-color: lightgreen;
+	border-color: lightgreen;
+}
+.third {
+	border: solid;
+	margin-left: 0px;
+	background-color: lightblue;
+	border-color: lightblue;
+}
+.first:hover {
+	background-color: green;
+	border-color: green;
+}
+.second:hover {
+	background-color: blue;
+	border-color: blue;
+}
+.third:hover {
+	background-color: green;
+	border-color: green;
+}
 input {
 	resize: horizontal;
 	width: 150px;
@@ -80,6 +110,12 @@ th {
 td {
 	margin: 0;
 	border: solid;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
 }
 a {
 	font-size: 1.3em;
@@ -159,4 +195,5 @@ a {
 	border-radius: 70px 70px;
 	margin-left: 10px;
 	margin-right: 10px;
+	margin-bottom: 0px;
 }
