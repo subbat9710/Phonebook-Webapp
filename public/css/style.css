@@ -1,7 +1,8 @@
 h2 {
-	background-color: orange;
-	margin: 10px;
-	border-radius: 70px 70px;
+	background-color: #2ec99a;
+	margin: 30px;
+	color: #3a4df9;
+	padding: 3px;
 }
 
 .form-search-submit{
@@ -83,7 +84,7 @@ h1 {
 body {
 	font-family: "Arial", Serif;
 	font-size: 1.2em;
-	background: linear-gradient(powderblue, red);
+	background: #ffffff;
 	background-position: center center;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
@@ -103,34 +104,35 @@ body {
 	opacity: 0.9;
 }
 .first {
-	padding: 0px;
+	padding: 4px;
 	margin-left: 0px;
-	border: solid;
-	background-color: lightblue; 
-	border-color: lightblue;
+	border: solid 1px;
+	border-color: #000;
+	border-radius: 2px;
 }
 .second { 
-	border: solid; 
-	background-color: lightgreen;
-	border-color: lightgreen;
+	padding: 4px;
+	border: solid 1px; 
+	border-color: #000;
+	border-radius: 2px;
 }
 .third {
-	border: solid;
+	padding: 4px;
+	border: solid 1px;
 	margin-left: 0px;
-	background-color: lightblue;
-	border-color: lightblue;
+	border-color: #000;
 }
 .first:hover {
-	background-color: green;
-	border-color: green;
+	background: #063574;
+	color: #ffffff;
 }
 .second:hover {
-	background-color: blue;
-	border-color: blue;
+	background: #fff700;
+	color: #ffffff;
 }
 .third:hover {
-	background-color: green;
-	border-color: green;
+	background: #1e83c8;
+	color: #ffffff;
 }
 input {
 	resize: horizontal;
@@ -262,16 +264,19 @@ a {
     color: #23441e;    
     text-shadow: 0 1px 0 rgba(255,255,255,0.5);
 }
-.footer {
-	font-margin: 10px;
-	color: white;
-	height: 35px;
-	background-color: black;
-	border-radius: 70px 70px;
-	margin-left: 10px;
-	margin-right: 10px;
+footer {
+	padding: 0px;
+	color: #fff;
+	height: 30px;
+	background-color: #000;
+	margin-left: 0px;
+	margin-right: 0px;
 	margin-bottom: 0px;
+	text-align: center;
 }
 @media(max-width: 568px){
-	/*.navbar-{display: none}*/
+	.navbar-{display: none}
+}
+@media(max-width: 568px){
+	.slide-open{display: none}
 }
