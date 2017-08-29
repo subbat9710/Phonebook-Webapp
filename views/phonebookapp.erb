@@ -1,61 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charest="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	    <title>phonebookapp</title>  
-	    <link href ="css/style.css" rel ="stylesheet"> <!-- links the css folder -->
+        <link href ="css/style.css" rel ="stylesheet">
     </head>
-        <nav class="navbar">
-            <span class="open-side">
-                <a href="#" onclick="openSlideMenu()">
-                    <svg width="30" height="30">
-                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
-                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
-                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
-                    </svg>
-                </a>
-            </span>
-            
-            <ul class="navbar-nav">
-                <li><a href="phonebookapp.erb">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <!-- <ul class="form">
-                <input type="text" id="search-input" class="search-input-bar" placeholder="Search">
-                <span  id="search-button" class="form-search-submit">&#x1f50e;</span>
-            </ul> -->
-        </nav>
-
-        <div id="slide-menu" class="side-nav">
-            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </div>
-
-        <script>
-            function openSlideMenu(){
-                document.getElementById('slide-menu').style.width = '250px';
-                document.getElementById('main').style.marginLeft = '250px';
-            }
-             function closeSlideMenu(){
-                document.getElementById('slide-menu').style.width = '0';
-                document.getElementById('main').style.marginLeft = '0';
-            }
-        </script>
-
-    <h2>Choose your choice</h2><p>
     <body>
-        <div><br><br><br><br><br><div><br><br><br><br><br><br><br><br><div>
-            <a class ="first" href ="index">Chick here to submit information</a>
-            <a class ="second" href ="index1">Click here to view information</a>
-            <a class ="third" href ="search">Click here to search information</a>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Phonebook</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Search">
+                    </div>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!--options-->
+        <div id="options" class="options">
+            <div class="container">
+                <h2>Choose following options</h2>
+                    <a class ="first" href ="index">Chick here to submit information</a>
+                    <a class ="second" href ="index1">Click here to view information</a>
+                    <a class ="third" href ="search">Click here to search information</a>
+            </div>
         </div>
-        <div><br><br><br><br><br><br><div><br><br><br><br><br><br><br>
     </body>
 </html>
