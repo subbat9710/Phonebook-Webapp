@@ -76,6 +76,7 @@ h4 {
 /*advanced search*/
 #imaginary_container{
     margin-top:20%; /* Don't copy this */
+    text-align: center;
 }
 .stylish-input-group .input-group-addon{
     background: white !important; 
@@ -89,6 +90,19 @@ h4 {
     border:0;
     background:transparent;
 }
+select {
+	padding: 5px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+.form1 {
+	margin-left: 60px;
+}
+.select-here {
+	margin-left: -60px;
+}
+
+
 
 
 

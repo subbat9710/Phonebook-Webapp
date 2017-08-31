@@ -55,6 +55,21 @@ p {
 .options h2 {
 	margin-bottom: 50px;
 }
+#one, 
+#two,
+#three{
+	color: #000;
+}
+
+/*results*/
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+th, td {
+	text-align: left;
+	padding: 5px;
+}
 
 
 

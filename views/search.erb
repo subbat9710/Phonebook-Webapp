@@ -8,43 +8,30 @@
     <div class="row">
         <div class="col-sm-6 col-sm-offset-3">
             <div id="imaginary_container"> 
-            <h4>Advanced Search</h4>
-                <div class="input-group stylish-input-group">
-                    <input type="text" class="form-control"  placeholder="Search" >
-                    <span class="input-group-addon">
-                        <button type="submit">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </button>  
-                    </span>
-                </div>
+            <h4>Advanced Search</h4><hr>
+                <form class="form1" method ="post" action ="results">
+                    <div class="select-here"> 
+                    Select here: <select id ="find" name ="find">
+                    <option value ="full_name">Full Name</option>
+                    <option value ="street_address">Street Address</option>
+                    <option value ="city">City</option>
+                    <option value ="state">State</option>
+                    <option value ="cell_phone">Cell Phone</option>
+                    <option value ="work_phone">Work Phone</option>
+                    </select>
+                    </div>
+                    <div class="input-group stylish-input-group">
+                        <input class="form-control" type ="text" name ="findcontacts" placeholder="Type here">
+                        <span class="input-group-addon">
+                            <button type="submit">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>  
+                        </span>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-</div>
-
-
-
-
-
-
-<!--     <hr>
-    <div>
-        <h>Search your name</h>
-        <form id ="searchbox" method ="post" action ="results">
-            <select id ="find" name ="find">
-            <option value ="first_name">First Name</option>
-            <option value ="last_name">Last Name</option>
-            <option value ="street_address">Street Address</option>
-            <option value ="city">City</option>
-            <option value ="state">State</option>
-            <option value ="cell_phone">Cell Phone</option>
-            <option value ="home_phone">Home Phone</option>
-            <option value ="work_phone">Work Phone</option>
-            </select>
-
-            <input id ="search" type ="text" name ="findcontacts" placeholder="Type here">
-            <input id ="submit" type ="submit" name ="submit" value ="Search">
-        </form>
-    </div> -->
+    </div>
 </body>
 </html>
