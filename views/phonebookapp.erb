@@ -9,25 +9,22 @@
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">Phonebook</a>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                </ul>
-                <form class="navbar-form navbar-right">
+                <form class="navbar-form navbar-right" method="post" action="results">
                     <div class="form-group">
-                        <input class="form-control" type="text" placeholder="Search">
+                        <input class="form-control" type="text" name="findcontacts" placeholder="Search">
                     </div>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" name="submit" type="submit">Search</button>
                 </form>
             </div>
         </nav>
         <!--options-->
         <div id="options" class="options">
             <div class="container">
-                <h2>Choose following options</h2>
+                <h2><i class="fa fa-mobile" aria-hidden="true"></i> Choose following options</h2><hr>
                     <p>Please read each options and filled out your credentials.</p><br>
-                    <a class ="first" href ="index">Chick here to submit information</a>
-                    <a class ="second" href ="index1">Click here to view information</a>
-                    <a class ="third" href ="search">Click here to search information</a><br><br><br>
+                    <a class ="first" href ="index">Submit Information</a>
+                    <a class ="second" href ="index1">View Information</a>
+                    <a class ="third" href ="search">Advanced Search</a><br><br><br>
             </div>
         </div>
         <!--footer-->
@@ -36,6 +33,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-0 col-md-0">
+                        <p><i class="fa fa-user" aria-hidden="true"></i> Teela Ram Subba</p>
                         <p><i class="fa fa-envelope" aria-hidden="true"></i> teela.subba1991@gmail.com</p>
                         <p><i class="fa fa-phone" aria-hidden="true"></i> 4124198089</p>
                     </div>
