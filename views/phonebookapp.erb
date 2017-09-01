@@ -4,19 +4,69 @@
         <link href ="css/style.css" rel ="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-inverse">
+     <!--   <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">Phonebook</a>
                 </div>
-                <form class="navbar-form navbar-right" method="#" action="#">
-                    <div class="form-group">
-                        <input class="form-control" type="text" name="findcontacts" placeholder="Search">
+                <form class="navbar-form navbar-right" method ="post" action ="results">
+                    <div class="select-here"> 
+                    <select id ="find" name ="find">
+                    <option value ="full_name">Full Name</option>
+                    <option value ="street_address">Street Address</option>
+                    <option value ="city">City</option>
+                    <option value ="state">State</option>
+                    <option value ="cell_phone">Cell Phone</option>
+                    <option value ="work_phone">Work Phone</option>
+                    </select>
                     </div>
-                    <button class="btn btn-outline-success my-2 my-sm-0" name="submit" type="submit">Search</button>
-                </form>
+                    <div class="input-group stylish-input-group">
+                        <input class="form-control" type ="text" name ="findcontacts" placeholder="Type here">
+                        <span class="input-group-addon">
+                            <button type="submit">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>  
+                        </span>
             </div>
-        </nav>
+        </nav> -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Phonebook</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-right" method="post" action="results">
+                    <div class="form-group">
+                    <select class="form-control" type="text" name="find">
+                        <option value="full_name">Full Name</option>
+                        <option value="street_address">Street Address</option>
+                        <option value="city">City</option>
+                        <option value="state">State Abbreviation</option>
+                        <option value="zipcode">Zip Code</option>
+                        <option value="cell_phone">Cell Phone</option>
+                        <option value="work_phone">Work Phone</option>
+                    </select>
+                    </div>
+                    <div class="input-group stylish-input-group">
+                        <input class="form-control" type="text" placeholder="Type here" name="findcontacts">
+                        <span class="input-group-addon">
+                            <button type="submit">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>  
+                        </span>
+                    </div>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
         <!--options-->
         <div id="options" class="options">
             <div class="container">
