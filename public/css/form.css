@@ -102,7 +102,7 @@ select {
 	margin-left: -60px;
 }
 
-@media(max-width: 768px) {
+@media(width: 320px) {
 	.input-group {
 		width: 240px;
 	}

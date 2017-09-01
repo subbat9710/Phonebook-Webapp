@@ -70,6 +70,18 @@ th, td {
 	text-align: left;
 	padding: 5px;
 }
+@media(max-width: 480px) {
+    .footer {
+    	margin-left: 12px;
+    }
+    p {
+    	font-size: 17px;
+    }
+    #two,
+    #three {
+    	width: 188px;
+    }
+}
 
 
 
