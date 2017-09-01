@@ -12,7 +12,7 @@ db_params = {
 db = PG::Connection.new(db_params)
 
 get '/' do 
-   erb :phonebookapp	
+   erb :phonebookapp, :locals => {:message => ""}	
 end
 
 
@@ -34,8 +34,13 @@ post '/phonebook' do
 	zipcode = params[:zipcode]
 	cell_phone = params[:cell_phone]
     work_phone = params[:work_phone]
+    check_cellphone = db.exec("SELECT * FROM phonebook WHERE cell_phone = '#{cell_phone}'")
+    if check_cellphone.num_tuples.zero? == false
+    	erb :phonebookapp, :locals => {:message => "Cell Phone number already exist in our database"}
+    else
     db.exec("INSERT INTO phonebook(full_name, street_address, city, state, zipcode, cell_phone, work_phone) VALUES('#{full_name}', '#{street_address}', '#{city}', '#{state}', '#{zipcode}', '#{cell_phone}', '#{work_phone}')"); #put the stuffs in the database
-    redirect '/'
+    erb :phonebookapp, :locals => {:message => "Thank you"}
+    end
 end
 
 get '/search' do 
