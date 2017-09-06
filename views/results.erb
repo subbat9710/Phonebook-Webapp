@@ -6,18 +6,19 @@
 <body> 
     <div class="container">
     <h2>Your Detail Informations</h2><hr>
-    <table>  
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Street Address</th>
-                <th>City</th>
-                <th>State</th>
-                <th>Zip Code</th>
-                <th>Cell Phone</th>
-                <th>Work Phone</th>
-            </tr>
-        </thead>
+    <div class="table-responsive">
+        <table class="table">  
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Street Address</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Zip Code</th>
+                    <th>Cell Phone</th>
+                    <th>Work Phone</th>
+                </tr>
+            </thead>
         <tbody>
             <%list.each do |contacts| %> 
             <tr>
@@ -33,5 +34,6 @@
     <%end%>
     </table>
     </div>
+   </div>
 </body>
 </html>
