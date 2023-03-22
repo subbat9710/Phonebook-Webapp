@@ -1,7 +1,7 @@
-ENV['host'] = 'mytestdb.czlwnzedcojz.us-west-2.rds.amazonaws.com'
+ENV['host'] = 'localhost'
 ENV['port'] = '5432'
-ENV['db_name'] = 'mytestdb'
-ENV['user'] = 'subbat9710'
+ENV['db_name'] = 'db_params'
+ENV['user'] = 'postgres'
 ENV['password'] = 'master12'
 
 

@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'pg'
+#require 'tiny_tds'
 load './local_env.rb' if File.exist?('./local_env.rb')
 
 db_params = {
