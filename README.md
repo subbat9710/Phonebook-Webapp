@@ -1,7 +1,7 @@
 # Phonebook WebApp
 The Phonebook App is a simple web application that allows users to store and retrieve contact information, including names, addresses, and phone numbers. It is built using the Sinatra framework and uses a PostgreSQL database to store the contact information.
 
-The main aim of the application is to provide a simple, user-friendly interface for managing contact information. Users can add new contacts to the database, and search for contacts by name or phone number.
+The main aim of the application is to provide a simple, user-friendly interface for managing contact information. Users can add new contacts to the database, and search for contacts by name or phone number or by address.
 
 ## Requirements for this projects
 1. Download pgAdmin (latest version recomended)
